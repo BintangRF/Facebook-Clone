@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlueBook-Profile</title>
+
+    <link rel="stylesheet" href="src/style.css" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  </head>
+  <body id="body" class="bg-slate-200">
+    <nav
+      id="navbar"
+      class="sticky top-0 z-10 flex items-center justify-between px-20 py-1 bg-blue-600">
+      <div class="flex items-center nav-left">
+        <h1 class="mr-12 text-3xl font-bold text-white">
+          <a href="index.html"
+            ><span class="p-1 text-blue-600 rounded-sm bg-slate-50">B</span
+            >lueBook</a
+          >
+        </h1>
+        <ul class="flex items-center justify-center">
+          <li><img src="images/notification.png" alt="" /></li>
+          <li><img src="images/inbox.png" alt="" /></li>
+          <li><img src="images/video.png" alt="" /></li>
+        </ul>
+      </div>
+      <!--  -->
+      <div class="flex items-center nav-right">
+        <div
+          class="flex items-center px-4 py-0 bg-white search-box w-80 rounded-2xl">
+          <img class="w-4" src="images/search.png" alt="search" />
+          <input
+            class="w-full p-2 text-black bg-transparent border-none outline-none"
+            type="text"
+            placeholder="Search" />
+        </div>
+        <div class="nav-user-icon ml-7 online">
+          <img
+            class="w-10 rounded-full"
+            src="images/profile-pic.png"
+            alt="profile" />
+        </div>
+      </div>
+      <!--  -->
+      <div
+        class="absolute w-11/12 overflow-hidden bg-white shadow-lg settings-menu max-w-80 top-14 right-20 h-96">
+        <div
+          id="dark-btn"
+          class="absolute flex bg-slate-500 top-5 right-5 w-11 rounded-2xl py-0.5 px-1 cursor-pointer">
+          <span class="inline-block w-5 h-5 bg-white rounded-full"></span>
+        </div>
+        <!--  -->
+        <div class="p-2 settings-menu-inner">
+          <div class="flex items-center user-profile">
+            <img
+              class="mr-2 text-gray-500 rounded-full w-11"
+              src="images/profile-pic.png"
+              alt="" />
+            <div>
+              <p class="text-lg font-bold text-gray-500">John Doe</p>
+              <a href="" class="mr-1 text-sm text-blue-500">Profile</a>
+            </div>
+          </div>
+          <hr class="border-0 h-0.5 bg-slate-200 my-4" />
+          <div class="flex items-center user-profile">
+            <img
+              class="mr-2 text-gray-500 rounded-full w-11"
+              src="images/feedback.png"
+              alt="" />
+            <div>
+              <p class="text-lg font-bold text-gray-500">Feedback</p>
+              <a href="" class="mr-1 text-sm text-blue-500"
+                >Help for everyone</a
+              >
+            </div>
+          </div>
+          <hr class="border-0 h-0.5 bg-slate-200 my-4" />
+          <div class="setting-links">
+            <img class="settings-icon" src="images/setting.png" alt="" />
+            <a class="text-gray-500" href="#"
+              >Settings & Privacy
+              <img class="w-2" src="images/arrow.png" alt=""
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img class="settings-icon" src="images/help.png" alt="" />
+            <a class="text-gray-500" href="#"
+              >Help & Support <img class="w-2" src="images/arrow.png" alt=""
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img class="settings-icon" src="images/display.png" alt="" />
+            <a class="text-gray-500" href="#"
+              >Display & Accessibility
+              <img class="w-2" src="images/arrow.png" alt=""
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img class="settings-icon" src="images/logout.png" alt="" />
+            <a class="text-gray-500" href="#"
+              >Logout <img class="w-2" src="images/arrow.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--  -->
+    <div class="px-40 py-5 profile-container">
+      <img class="w-full mb-4 rounded-md" src="images/cover.png" alt="" />
+      <div
+        class="flex items-start justify-between p-5 bg-white rounded profile-details">
+        <div class="pd-left">
+          <div class="flex items-start pd-row">
+            <img
+              class="w-24 mr-5 rounded-md pd-image"
+              src="images/profile.png"
+              alt="" />
+            <div>
+              <h3 class="text-2xl font-semibold text-black">Jones Doe</h3>
+              <p class="text-sm text-black">120 Friends - 20 Mutual</p>
+              <div class="flex">
+                <img src="images/member-1.png" alt="" />
+                <img src="images/member-2.png" alt="" />
+                <img src="images/member-3.png" alt="" />
+                <img src="images/member-4.png" alt="" />
+                <img src="images/member-5.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-right pd-right">
+          <button class="text-slate-950 bg-slate-200" type="button">
+            <img src="images/add-friends.png" alt="" /> Friends
+          </button>
+          <button class="text-white bg-blue-600" type="button">
+            <img src="images/message.png" alt="" /> Message
+          </button>
+          <br />
+          <br />
+          <a class="p-2 rounded-sm bg-slate-200" href="#"
+            ><img class="inline-block" src="images/more.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <!--  -->
+      <div class="flex items-start justify-between mt-5 profile-info">
+        <div class="info-col">
+          <div class="p-5 mb-5 bg-white rounded profile-intro">
+            <h3 class="text-lg text-black">Intro</h3>
+            <p class="my-2 text-sm text-center text-black">
+              Some Random Quote From User Lorem ipsum dolor sit.
+              <img class="inline-block w-3" src="images/feeling.png" alt="" />
+            </p>
+            <hr class="h-0.5 bg-slate-400 my-6" />
+            <ul>
+              <li class="text-gray-500">
+                <img src="images/profile-job.png" alt="" />Freelancer
+              </li>
+              <li class="text-gray-500">
+                <img src="images/profile-study.png" alt="" />University A
+              </li>
+              <li class="text-gray-500">
+                <img src="images/profile-study.png" alt="" />Student
+              </li>
+              <li class="text-gray-500">
+                <img src="images/profile-location.png" alt="" />Indonesia
+              </li>
+              <li class="text-gray-500">
+                <img src="images/profile-home.png" alt="" />Jakarta
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="p-5 mb-5 bg-white rounded profile-intro info-col">
+            <div class="flex items-center justify-between title-box">
+              <h3 class="text-lg text-black">Photos</h3>
+              <a class="text-sm text-blue-700" href="">All Photos</a>
+            </div>
+            <div class="grid grid-cols-3 gap-2 mt-3 photo-box">
+              <div><img src="images/photo1.png" alt="" /></div>
+              <div><img src="images/photo2.png" alt="" /></div>
+              <div><img src="images/photo3.png" alt="" /></div>
+              <div><img src="images/photo4.png" alt="" /></div>
+              <div><img src="images/photo5.png" alt="" /></div>
+              <div><img src="images/photo6.png" alt="" /></div>
+            </div>
+          </div>
+
+          <div class="p-5 mb-5 bg-white rounded profile-intro info-col">
+            <div class="flex items-center justify-between title-box">
+              <h3 class="text-lg text-black">Friends</h3>
+              <a class="text-sm text-blue-700" href="">All Friends</a>
+            </div>
+            <p class="text-sm text-slate-400">120 (20 mutual)</p>
+            <div class="grid grid-cols-3 gap-2 mt-3 friend-box">
+              <div>
+                <img src="images/member-1.png" alt="" />
+                <p class="text-sm text-slate-400">Member 1</p>
+              </div>
+              <div>
+                <img src="images/member-2.png" alt="" />
+                <p class="text-sm text-slate-400">Member 2</p>
+              </div>
+              <div>
+                <img src="images/member-3.png" alt="" />
+                <p class="text-sm text-slate-400">Member 3</p>
+              </div>
+              <div>
+                <img src="images/member-4.png" alt="" />
+                <p class="text-sm text-slate-400">Member 4</p>
+              </div>
+              <div>
+                <img src="images/member-5.png" alt="" />
+                <p class="text-sm text-slate-400">Member 5</p>
+              </div>
+              <div>
+                <img src="images/member-6.png" alt="" />
+                <p class="text-sm text-slate-400">Member 6</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="post-col">
+          <div class="w-full p-5 bg-white rounded-md write-post-container">
+            <div class="flex items-center user-profile">
+              <img
+                class="mr-2 text-gray-500 rounded-full w-11"
+                src="images/profile-pic.png"
+                alt="" />
+              <div>
+                <p class="text-lg font-bold text-gray-500">John Doe</p>
+                <small class="mr-1 text-sm text-gray-500"
+                  >Public<i
+                    class="ml-1 text-gray-500 fa-solid fa-caret-down"></i
+                ></small>
+              </div>
+            </div>
+            <div class="pt-5 post-input-container pl-14">
+              <textarea
+                name="comment"
+                id=""
+                class="w-full bg-transparent border-b border-gray-500 resize-none"
+                rows="3"
+                placeholder="Write Something"></textarea>
+              <div class="flex mt-2 add-post-links">
+                <a href="#"
+                  ><img src="images/live-video.png" alt="" />Live Video</a
+                >
+                <a href="#"><img src="images/photo.png" alt="" />Photo/Video</a>
+                <a href="#"><img src="images/feeling.png" alt="" />Activity</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full p-5 my-5 text-gray-400 bg-white rounded-md post-container">
+            <div class="flex items-center justify-between post-row">
+              <div class="flex items-center user-profile">
+                <img
+                  class="mr-2 text-gray-500 rounded-full w-11"
+                  src="images/profile-pic.png"
+                  alt="" />
+                <div>
+                  <p class="text-lg font-bold text-gray-500">John Doe</p>
+                  <small class="mr-1 text-sm text-gray-500"
+                    >December 00 2023, 00.00 a.m</small
+                  >
+                </div>
+              </div>
+              <a class="" href=""
+                ><i class="ml-1 text-gray-500 fa-solid fa-ellipsis-vertical"></i
+              ></a>
+            </div>
+            <p class="my-4 post-text">
+              Follow for more useful information
+              <span class="text-blue-700"> #WebDesign</span
+              ><span class="text-blue-700"> #WebDeveloper</span>
+            </p>
+            <img
+              class="w-full mb-1 rounded"
+              src="images/feed-image-1.png"
+              alt="" />
+            <div class="flex items-center justify-between post-row">
+              <div class="activity-icons">
+                <div><img src="images/like-blue.png" alt="" />1.2k</div>
+                <div><img src="images/comments.png" alt="" />600</div>
+                <div><img src="images/share.png" alt="" />400</div>
+              </div>
+              <div class="flex items-center post-profile-icon">
+                <img
+                  class="w-5 mr-1 rounded-full"
+                  src="images/profile-pic.png"
+                  alt="" /><i
+                  class="ml-1 text-gray-500 fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div
+            class="w-full p-5 my-5 text-gray-400 bg-white rounded-md post-container">
+            <div class="flex items-center justify-between post-row">
+              <div class="flex items-center user-profile">
+                <img
+                  class="mr-2 text-gray-500 rounded-full w-11"
+                  src="images/profile-pic.png"
+                  alt="" />
+                <div>
+                  <p class="text-lg font-bold text-gray-500">John Doe</p>
+                  <small class="mr-1 text-sm text-gray-500"
+                    >November 00 2023, 00.00 a.m</small
+                  >
+                </div>
+              </div>
+              <a class="" href=""
+                ><i class="ml-1 text-gray-500 fa-solid fa-ellipsis-vertical"></i
+              ></a>
+            </div>
+            <p class="my-4 post-text">
+              Hangout
+              <span class="text-blue-700"> #WebDesign</span
+              ><span class="text-blue-700"> #WebDeveloper</span>
+            </p>
+            <img
+              class="w-full mb-1 rounded"
+              src="images/feed-image-2.png"
+              alt="" />
+            <div class="flex items-center justify-between post-row">
+              <div class="activity-icons">
+                <div><img src="images/like-blue.png" alt="" />1.2k</div>
+                <div><img src="images/comments.png" alt="" />600</div>
+                <div><img src="images/share.png" alt="" />400</div>
+              </div>
+              <div class="flex items-center post-profile-icon">
+                <img
+                  class="w-5 mr-1 rounded-full"
+                  src="images/profile-pic.png"
+                  alt="" /><i
+                  class="ml-1 text-gray-500 fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div
+            class="w-full p-5 my-5 text-gray-400 bg-white rounded-md post-container">
+            <div class="flex items-center justify-between post-row">
+              <div class="flex items-center user-profile">
+                <img
+                  class="mr-2 text-gray-500 rounded-full w-11"
+                  src="images/profile-pic.png"
+                  alt="" />
+                <div>
+                  <p class="text-lg font-bold text-gray-500">John Doe</p>
+                  <small class="mr-1 text-sm text-gray-500"
+                    >November 00 2023, 00.00 a.m</small
+                  >
+                </div>
+              </div>
+              <a class="" href=""
+                ><i class="ml-1 text-gray-500 fa-solid fa-ellipsis-vertical"></i
+              ></a>
+            </div>
+            <p class="my-4 post-text">
+              Hangout
+              <span class="text-blue-700"> #WebDesign</span
+              ><span class="text-blue-700"> #WebDeveloper</span>
+            </p>
+            <img
+              class="w-full mb-1 rounded"
+              src="images/feed-image-3.png"
+              alt="" />
+            <div class="flex items-center justify-between post-row">
+              <div class="activity-icons">
+                <div><img src="images/like-blue.png" alt="" />1.2k</div>
+                <div><img src="images/comments.png" alt="" />600</div>
+                <div><img src="images/share.png" alt="" />400</div>
+              </div>
+              <div class="flex items-center post-profile-icon">
+                <img
+                  class="w-5 mr-1 rounded-full"
+                  src="images/profile-pic.png"
+                  alt="" /><i
+                  class="ml-1 text-gray-500 fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div
+            class="w-full p-5 my-5 text-gray-400 bg-white rounded-md post-container">
+            <div class="flex items-center justify-between post-row">
+              <div class="flex items-center user-profile">
+                <img
+                  class="mr-2 text-gray-500 rounded-full w-11"
+                  src="images/profile-pic.png"
+                  alt="" />
+                <div>
+                  <p class="text-lg font-bold text-gray-500">John Doe</p>
+                  <small class="mr-1 text-sm text-gray-500"
+                    >November 00 2023, 00.00 a.m</small
+                  >
+                </div>
+              </div>
+              <a class="" href=""
+                ><i class="ml-1 text-gray-500 fa-solid fa-ellipsis-vertical"></i
+              ></a>
+            </div>
+            <p class="my-4 post-text">
+              Hangout
+              <span class="text-blue-700"> #WebDesign</span
+              ><span class="text-blue-700"> #WebDeveloper</span>
+            </p>
+            <img
+              class="w-full mb-1 rounded"
+              src="images/feed-image-4.png"
+              alt="" />
+            <div class="flex items-center justify-between post-row">
+              <div class="activity-icons">
+                <div><img src="images/like-blue.png" alt="" />1.2k</div>
+                <div><img src="images/comments.png" alt="" />600</div>
+                <div><img src="images/share.png" alt="" />400</div>
+              </div>
+              <div class="flex items-center post-profile-icon">
+                <img
+                  class="w-5 mr-1 rounded-full"
+                  src="images/profile-pic.png"
+                  alt="" /><i
+                  class="ml-1 text-gray-500 fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div
+            class="w-full p-5 my-5 text-gray-400 bg-white rounded-md post-container">
+            <div class="flex items-center justify-between post-row">
+              <div class="flex items-center user-profile">
+                <img
+                  class="mr-2 text-gray-500 rounded-full w-11"
+                  src="images/profile-pic.png"
+                  alt="" />
+                <div>
+                  <p class="text-lg font-bold text-gray-500">John Doe</p>
+                  <small class="mr-1 text-sm text-gray-500"
+                    >November 00 2023, 00.00 a.m</small
+                  >
+                </div>
+              </div>
+              <a class="" href=""
+                ><i class="ml-1 text-gray-500 fa-solid fa-ellipsis-vertical"></i
+              ></a>
+            </div>
+            <p class="my-4 post-text">
+              Hangout
+              <span class="text-blue-700"> #WebDesign</span
+              ><span class="text-blue-700"> #WebDeveloper</span>
+            </p>
+            <img
+              class="w-full mb-1 rounded"
+              src="images/feed-image-5.png"
+              alt="" />
+            <div class="flex items-center justify-between post-row">
+              <div class="activity-icons">
+                <div><img src="images/like-blue.png" alt="" />1.2k</div>
+                <div><img src="images/comments.png" alt="" />600</div>
+                <div><img src="images/share.png" alt="" />400</div>
+              </div>
+              <div class="flex items-center post-profile-icon">
+                <img
+                  class="w-5 mr-1 rounded-full"
+                  src="images/profile-pic.png"
+                  alt="" /><i
+                  class="ml-1 text-gray-500 fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <button
+            class="block px-2 py-1 m-auto border-2 rounded cursor-pointer border-slate-400 text-slate-400"
+            type="button">
+            Load More
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div
+      id="footer"
+      class="px-4 py-2 mt-5 text-center bg-blue-700 footer text-slate-100">
+      <p>
+        Made by BintangRF idea from
+        <a href="https://www.youtube.com/@GreatStackDev" target="_blank"
+          >GreatStackDev</a
+        >
+      </p>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+  <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+</html>
