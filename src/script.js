@@ -33,6 +33,14 @@ function toggleClass() {
   });
   navbar.classList.toggle("bg-slate-900");
   footer.classList.toggle("bg-slate-900");
+
+  const isDarkModeOn = darkBtn.classList.contains("dark-btn-on");
+  localStorage.setItem("darkMode", isDarkModeOn);
+}
+
+const savedDarkModeState = localStorage.getItem("darkMode");
+if (savedDarkModeState === "true") {
+  toggleClass();
 }
 
 darkBtn.addEventListener("click", toggleClass);
